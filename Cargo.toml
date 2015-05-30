@@ -1,0 +1,7 @@
+[package]
+name = "sendfile"
+version = "0.1.0"
+authors = ["Wang Xuerui <idontknw.wang@gmail.com>"]
+
+[dependencies]
+syscall = "*"
