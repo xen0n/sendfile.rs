@@ -18,8 +18,8 @@ fn main() {
     let ref dest_addr_str = args[2];
     let dest_addr = std::net::SocketAddr::from_str(unsafe { dest_addr_str.slice_unchecked(0, dest_addr_str.len()) }).unwrap();
 
-    let mut infile = std::fs::File::open(src_path).unwrap();
-    let mut stream = std::net::TcpStream::connect(dest_addr).unwrap();
+    let infile = std::fs::File::open(src_path).unwrap();
+    let stream = std::net::TcpStream::connect(dest_addr).unwrap();
 
     let bytes_written = sendfile::sendfile_all(&infile, &stream, 4096).unwrap();
     println!("Ok -- {} byte(s) written", bytes_written);
