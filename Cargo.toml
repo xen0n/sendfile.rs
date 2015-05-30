@@ -6,7 +6,7 @@ description = "A platform sendfile wrapper for Rust."
 repository = "https://github.com/xen0n/sendfile.rs"
 readme = "README.md"
 keywords = ["sendfile", "wrapper", "linux"]
-license = "Apache-2.0"
+license = "Apache-2.0/MIT"
 authors = ["Wang Xuerui <idontknw.wang@gmail.com>"]
 
 [dependencies]
