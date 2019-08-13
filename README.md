@@ -1,3 +1,17 @@
+# PROJECT DISCONTINUED
+
+**IMPORTANT** This project is long dead, the `crates.io` package `sendfile` no
+longer points at this repo, and is no longer controlled by me.
+
+This library was written during my early Rust days, primarily for learning
+purposes, and was never put into production.
+
+Fellow developer [@Thomasdezeeuw](https://github.com/Thomasdezeeuw) has done a
+better work of wrapping the nice kernel feature type-safely, at
+[`Thomasdezeeuw/sendfile`](https://github.com/Thomasdezeeuw/sendfile).
+You can transition to that API for `sendfile` functionality.
+
+
 # A Platform Sendfile Wrapper for Rust
 
 `sendfile.rs` is a wrapper library aimed to provide zero-copy I/O on platforms supporting it.
